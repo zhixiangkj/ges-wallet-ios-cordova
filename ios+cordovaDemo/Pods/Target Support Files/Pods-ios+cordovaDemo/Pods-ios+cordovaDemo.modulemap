@@ -1,0 +1,6 @@
+module Pods_ios_cordovaDemo {
+  umbrella header "Pods-ios+cordovaDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

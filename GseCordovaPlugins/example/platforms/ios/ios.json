@@ -1,0 +1,59 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"GsePay\"><param name=\"ios-package\" value=\"GsePay\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"GseWallet\"><param name=\"ios-package\" value=\"GseWallet\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.gse_cordova_plugins.example"
+    },
+    "cordova-plugin-gsepay": {
+      "PACKAGE_NAME": "com.gse_cordova_plugins.example"
+    },
+    "cordova-plugin-gsewallet": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-gsepay.GsePay",
+      "file": "plugins/cordova-plugin-gsepay/www/GsePay.js",
+      "pluginId": "cordova-plugin-gsepay",
+      "clobbers": [
+        "cordova.plugins.GsePay"
+      ]
+    },
+    {
+      "id": "cordova-plugin-gsewallet.GseWallet",
+      "file": "plugins/cordova-plugin-gsewallet/www/GseWallet.js",
+      "pluginId": "cordova-plugin-gsewallet",
+      "clobbers": [
+        "GseWallet"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-gsepay": "0.0.1",
+    "cordova-plugin-gsewallet": "0.0.1"
+  }
+}

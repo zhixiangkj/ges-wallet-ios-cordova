@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyWebViewController">
+            <connections>
+                <outlet property="closeBtn" destination="eL7-kj-YM5" id="mke-Wq-uNQ"/>
+                <outlet property="view" destination="BqG-a4-5z0" id="FOK-3W-Wyq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BqG-a4-5z0">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eL7-kj-YM5">
+                    <rect key="frame" x="324" y="30" width="31" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cHF-Ht-ggd"/>
+                        <constraint firstAttribute="width" constant="31" id="cLL-pq-nzi"/>
+                    </constraints>
+                    <state key="normal" title="关闭"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8NJ-tl-b7w" firstAttribute="trailing" secondItem="eL7-kj-YM5" secondAttribute="trailing" constant="20" id="NDe-oT-r8I"/>
+                <constraint firstItem="eL7-kj-YM5" firstAttribute="top" secondItem="8NJ-tl-b7w" secondAttribute="top" constant="10" id="Pig-DO-iMc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="8NJ-tl-b7w"/>
+            <point key="canvasLocation" x="-364" y="-266.71664167916043"/>
+        </view>
+    </objects>
+</document>

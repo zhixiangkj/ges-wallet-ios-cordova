@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-gsewallet",
+  "version": "0.0.1",
+  "description": "一个gse钱包提供的cordova插件",
+  "cordova": {
+    "id": "cordova-plugin-gsewallet",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "fujinliang",
+  "license": "GSE"
+}

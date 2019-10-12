@@ -1,0 +1,34 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.gse.gespay": {
+    "source": {
+      "type": "local",
+      "path": "/Users/fjl/GseCordovaPlugins/example/node_modules/cordova-plugin-gsepay"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-gsepay": {
+    "source": {
+      "type": "local",
+      "path": "/Users/fjl/GseCordovaPlugins/example/node_modules/cordova-plugin-gsepay"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-gsewallet": {
+    "source": {
+      "type": "local",
+      "path": "/Users/fjl/Projects/质享科技项目/ges-wallet-ios-cordova/GseCordovaPlugins/example/node_modules/cordova-plugin-gsewallet"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

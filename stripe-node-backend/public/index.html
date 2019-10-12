@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stripe支付node后端</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<button id="click-button">点击</button>
+</body>
+<script type="text/javascript">
+    $('#click-button').click(() => {
+      $.ajax({
+        type: 'POST',
+        url: 'http://localhost:3000/ephemeral_keys',
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({
+          customerId: 12334,
+          stripe_version: '2018-11-08'
+        }),
+        success: (data) => {
+          console.log(data)
+        },
+        error: (err) => {
+          console.error(err)
+        },
+        dataType:'json'
+      });
+    })
+</script>
+</html>

@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Stripe (14.0.0)
+  - Toast (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - Stripe (~> 14.0.0)
+  - Toast (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Stripe
+    - Toast
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Stripe: db29ad197c74aca6fb981e4e8355cf7ebd0fca5a
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+
+PODFILE CHECKSUM: 86037817d6bc969746beeac717b8d008bb3fccc7
+
+COCOAPODS: 1.5.3

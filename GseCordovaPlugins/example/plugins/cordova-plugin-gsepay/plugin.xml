@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-gsepay" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>GsePay</name>
+    <js-module name="GsePay" src="www/GsePay.js">
+        <clobbers target="cordova.plugins.GsePay"/>
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="GsePay">
+                <param name="ios-package" value="GsePay"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/GsePay.m"/>
+    </platform>
+</plugin>

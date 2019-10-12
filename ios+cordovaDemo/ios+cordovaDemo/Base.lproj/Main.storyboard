@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="caI-YD-0gh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dSq-gh-yOa">
+            <objects>
+                <navigationController id="caI-YD-0gh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A6o-z1-OyQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wzy-op-AGJ" kind="relationship" relationship="rootViewController" id="9H2-xE-nyF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDz-cN-4tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2609" y="-528"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="kgu-9m-0wG">
+            <objects>
+                <viewController id="wzy-op-AGJ" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xll-Od-9SK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jC3-FT-w13">
+                                <rect key="frame" x="0.0" y="64" width="375" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您要访问的网址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7K-Vw-DFT">
+                                        <rect key="frame" x="37.5" y="20" width="300" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Zh-qA-erB"/>
+                                            <constraint firstAttribute="width" constant="300" id="NPB-SI-haS"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2p-g8-UZr">
+                                        <rect key="frame" x="157.5" y="70" width="60" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NRB-2c-GC9"/>
+                                            <constraint firstAttribute="width" constant="60" id="izI-jF-QLs"/>
+                                        </constraints>
+                                        <state key="normal" title="前往"/>
+                                        <connections>
+                                            <action selector="prevent:" destination="wzy-op-AGJ" eventType="touchUpInside" id="lqU-Nq-wZ3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="W2p-g8-UZr" secondAttribute="bottom" constant="10" id="D4l-K0-fK4"/>
+                                    <constraint firstItem="W2p-g8-UZr" firstAttribute="top" secondItem="p7K-Vw-DFT" secondAttribute="bottom" constant="10" id="XNO-MQ-odO"/>
+                                    <constraint firstItem="W2p-g8-UZr" firstAttribute="centerX" secondItem="jC3-FT-w13" secondAttribute="centerX" id="my4-0z-uJP"/>
+                                    <constraint firstItem="p7K-Vw-DFT" firstAttribute="centerX" secondItem="jC3-FT-w13" secondAttribute="centerX" id="p94-Nc-peg"/>
+                                    <constraint firstItem="p7K-Vw-DFT" firstAttribute="top" secondItem="jC3-FT-w13" secondAttribute="top" constant="20" id="yhH-G6-9Of"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJS-mp-uKD">
+                                <rect key="frame" x="0.0" y="204" width="375" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="请输入支付金额" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nua-RL-i0S">
+                                        <rect key="frame" x="37.5" y="20" width="300" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2ou-VU-3iq"/>
+                                            <constraint firstAttribute="width" constant="300" id="vYY-3Y-dj0"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvp-Lr-PTo">
+                                        <rect key="frame" x="157.5" y="70" width="60" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="ZTn-Ez-BAC"/>
+                                            <constraint firstAttribute="height" constant="40" id="ptW-Sh-dCF"/>
+                                        </constraints>
+                                        <state key="normal" title="支付"/>
+                                        <connections>
+                                            <action selector="stripePay:" destination="wzy-op-AGJ" eventType="touchUpInside" id="50p-An-qiX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="nua-RL-i0S" firstAttribute="top" secondItem="iJS-mp-uKD" secondAttribute="top" constant="20" id="G7c-o7-GLK"/>
+                                    <constraint firstItem="nua-RL-i0S" firstAttribute="centerX" secondItem="iJS-mp-uKD" secondAttribute="centerX" id="LUC-0l-Md0"/>
+                                    <constraint firstItem="Rvp-Lr-PTo" firstAttribute="centerX" secondItem="iJS-mp-uKD" secondAttribute="centerX" id="e8X-Ar-RoQ"/>
+                                    <constraint firstItem="Rvp-Lr-PTo" firstAttribute="top" secondItem="nua-RL-i0S" secondAttribute="bottom" constant="10" id="mPm-IT-iqG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rvp-Lr-PTo" secondAttribute="bottom" constant="10" id="wrn-8F-5ah"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iJS-mp-uKD" firstAttribute="trailing" secondItem="HsW-oJ-ItS" secondAttribute="trailing" id="1Xw-sH-Gb1"/>
+                            <constraint firstItem="HsW-oJ-ItS" firstAttribute="trailing" secondItem="jC3-FT-w13" secondAttribute="trailing" id="1ay-wW-4hl"/>
+                            <constraint firstItem="iJS-mp-uKD" firstAttribute="leading" secondItem="HsW-oJ-ItS" secondAttribute="leading" id="60v-RS-e1b"/>
+                            <constraint firstItem="iJS-mp-uKD" firstAttribute="top" secondItem="jC3-FT-w13" secondAttribute="bottom" constant="20" id="6dV-Ps-vyG"/>
+                            <constraint firstItem="jC3-FT-w13" firstAttribute="leading" secondItem="HsW-oJ-ItS" secondAttribute="leading" id="BCO-Lr-fXQ"/>
+                            <constraint firstItem="jC3-FT-w13" firstAttribute="top" secondItem="HsW-oJ-ItS" secondAttribute="top" id="IHG-Ep-6PL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HsW-oJ-ItS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="Zu7-k0-cRF"/>
+                    <connections>
+                        <outlet property="payAmountTF" destination="nua-RL-i0S" id="c9I-e3-eh1"/>
+                        <outlet property="preventWebView" destination="W2p-g8-UZr" id="QGN-9l-cgW"/>
+                        <outlet property="urlTF" destination="p7K-Vw-DFT" id="FhJ-sz-8lc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpQ-Vc-i7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1903.2" y="-528.48575712143929"/>
+        </scene>
+    </scenes>
+</document>

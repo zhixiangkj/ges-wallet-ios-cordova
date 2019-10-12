@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-gsepay",
+  "version": "0.0.1",
+  "description": "一个h5调用gse钱包app支付功能的cordova插件",
+  "cordova": {
+    "id": "cordova-plugin-gsepay",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "fujinliang",
+  "license": "GSE"
+}

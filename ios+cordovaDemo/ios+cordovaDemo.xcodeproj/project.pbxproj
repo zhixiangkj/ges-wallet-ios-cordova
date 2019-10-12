@@ -1,0 +1,1002 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0814CE5A21C396B5005C6EFA /* UIView+MaskActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0814CE5921C396B5005C6EFA /* UIView+MaskActivity.m */; };
+		081AE6FF21A0F3A900A3442D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AE6FE21A0F3A900A3442D /* AppDelegate.m */; };
+		081AE70221A0F3A900A3442D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AE70121A0F3A900A3442D /* ViewController.m */; };
+		081AE70521A0F3A900A3442D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081AE70321A0F3A900A3442D /* Main.storyboard */; };
+		081AE70721A0F3AA00A3442D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081AE70621A0F3AA00A3442D /* Assets.xcassets */; };
+		081AE70A21A0F3AA00A3442D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081AE70821A0F3AA00A3442D /* LaunchScreen.storyboard */; };
+		081AE70D21A0F3AA00A3442D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AE70C21A0F3AA00A3442D /* main.m */; };
+		081AE71721A0F3AA00A3442D /* ios_cordovaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AE71621A0F3AA00A3442D /* ios_cordovaDemoTests.m */; };
+		081AE72221A0F3AA00A3442D /* ios_cordovaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081AE72121A0F3AA00A3442D /* ios_cordovaDemoUITests.m */; };
+		081AE76221A11C8600A3442D /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 081AE76121A11C8600A3442D /* config.xml */; };
+		081AE76421A11C9400A3442D /* www in Resources */ = {isa = PBXBuildFile; fileRef = 081AE76321A11C9400A3442D /* www */; };
+		081AE76721A11CC800A3442D /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 081AE75E21A11C6F00A3442D /* libCordova.a */; };
+		081E0E7D21C778E8000EF892 /* GlobalConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E0E7C21C778E8000EF892 /* GlobalConst.swift */; };
+		086A7F3521BE67D700452528 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 086A7F2A21BE67D700452528 /* CDVLocation.m */; };
+		086A7F3621BE67D700452528 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A7F2C21BE67D700452528 /* QRScanner.swift */; };
+		086A7F3721BE67D700452528 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 086A7F2D21BE67D700452528 /* README */; };
+		086A7F3821BE67D700452528 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 086A7F3021BE67D700452528 /* CDVWKWebViewEngine.m */; };
+		086A7F3921BE67D700452528 /* CDVWKWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086A7F3221BE67D700452528 /* CDVWKWebViewUIDelegate.m */; };
+		086A7F3A21BE67D700452528 /* CDVWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 086A7F3421BE67D700452528 /* CDVWKProcessPoolFactory.m */; };
+		08709CBE21BA093400F3732F /* PayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08709CBD21BA093400F3732F /* PayView.xib */; };
+		08B2CA8421C0BAC900FAAF33 /* APPBackgroundMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2CA7E21C0BAC900FAAF33 /* APPBackgroundMode.m */; };
+		08B2CA8521C0BAC900FAAF33 /* APPMethodMagic.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2CA7F21C0BAC900FAAF33 /* APPMethodMagic.m */; };
+		08B2CA8621C0BAC900FAAF33 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2CA8221C0BAC900FAAF33 /* CDVDevice.m */; };
+		08B2CA8921C0C27B00FAAF33 /* appbeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 08B2CA8821C0C27B00FAAF33 /* appbeep.wav */; };
+		08B2CA8E21C0E64F00FAAF33 /* GseWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2CA8C21C0E64F00FAAF33 /* GseWallet.m */; };
+		08B2CA9321C0F99200FAAF33 /* GSE_WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B2CA9221C0F99200FAAF33 /* GSE_WebViewController.m */; };
+		08F45AE221B6844A00DC256D /* GSE_Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F45ADE21B6844A00DC256D /* GSE_Pay.swift */; };
+		08F45AE421B6844A00DC256D /* MainAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F45AE021B6844A00DC256D /* MainAPIClient.swift */; };
+		08F45AE521B6844A00DC256D /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F45AE121B6844A00DC256D /* Ride.swift */; };
+		08F45AED21B6881600DC256D /* libAlamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F45AEC21B6881600DC256D /* libAlamofire.a */; };
+		08F45AEF21B6881600DC256D /* libStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F45AEE21B6881600DC256D /* libStripe.a */; };
+		08F45AF421B76EF100DC256D /* StripePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F45AF321B76EF100DC256D /* StripePay.swift */; };
+		08F45AF821B8D96400DC256D /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F45AF721B8D96400DC256D /* Popup.swift */; };
+		F65CD430735B4335E1973F96 /* libPods-ios+cordovaDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 149E6ADCEDE5E4DE2ABFB892 /* libPods-ios+cordovaDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		081AE71321A0F3AA00A3442D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081AE6F221A0F3A900A3442D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081AE6F921A0F3A900A3442D;
+			remoteInfo = "ios+cordovaDemo";
+		};
+		081AE71E21A0F3AA00A3442D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081AE6F221A0F3A900A3442D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081AE6F921A0F3A900A3442D;
+			remoteInfo = "ios+cordovaDemo";
+		};
+		081AE75D21A11C6F00A3442D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081AE75821A11C6F00A3442D /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68A32D7114102E1C006B237C;
+			remoteInfo = CordovaLib;
+		};
+		081AE75F21A11C6F00A3442D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081AE75821A11C6F00A3442D /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+		081AE76521A11CAE00A3442D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081AE75821A11C6F00A3442D /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0810207421BFA89700C2EF1F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0810207521BFA94900C2EF1F /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		0814CE5821C396B5005C6EFA /* UIView+MaskActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MaskActivity.h"; sourceTree = "<group>"; };
+		0814CE5921C396B5005C6EFA /* UIView+MaskActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MaskActivity.m"; sourceTree = "<group>"; };
+		081AE6FA21A0F3A900A3442D /* ios+cordovaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios+cordovaDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		081AE6FD21A0F3A900A3442D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		081AE6FE21A0F3A900A3442D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		081AE70021A0F3A900A3442D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		081AE70121A0F3A900A3442D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		081AE70421A0F3A900A3442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		081AE70621A0F3AA00A3442D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		081AE70921A0F3AA00A3442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		081AE70B21A0F3AA00A3442D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081AE70C21A0F3AA00A3442D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		081AE71221A0F3AA00A3442D /* ios+cordovaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios+cordovaDemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		081AE71621A0F3AA00A3442D /* ios_cordovaDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_cordovaDemoTests.m; sourceTree = "<group>"; };
+		081AE71821A0F3AA00A3442D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081AE71D21A0F3AA00A3442D /* ios+cordovaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios+cordovaDemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		081AE72121A0F3AA00A3442D /* ios_cordovaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_cordovaDemoUITests.m; sourceTree = "<group>"; };
+		081AE72321A0F3AA00A3442D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		081AE75821A11C6F00A3442D /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		081AE76121A11C8600A3442D /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = "ios+cordovaDemo/config.xml"; sourceTree = "<group>"; };
+		081AE76321A11C9400A3442D /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		081E0E7C21C778E8000EF892 /* GlobalConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConst.swift; sourceTree = "<group>"; };
+		086A7F2921BE67D700452528 /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVLocation.h; sourceTree = "<group>"; };
+		086A7F2A21BE67D700452528 /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVLocation.m; sourceTree = "<group>"; };
+		086A7F2C21BE67D700452528 /* QRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanner.swift; sourceTree = "<group>"; };
+		086A7F2D21BE67D700452528 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		086A7F2F21BE67D700452528 /* CDVWKWebViewUIDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVWKWebViewUIDelegate.h; sourceTree = "<group>"; };
+		086A7F3021BE67D700452528 /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVWKWebViewEngine.m; sourceTree = "<group>"; };
+		086A7F3121BE67D700452528 /* CDVWKProcessPoolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVWKProcessPoolFactory.h; sourceTree = "<group>"; };
+		086A7F3221BE67D700452528 /* CDVWKWebViewUIDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVWKWebViewUIDelegate.m; sourceTree = "<group>"; };
+		086A7F3321BE67D700452528 /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVWKWebViewEngine.h; sourceTree = "<group>"; };
+		086A7F3421BE67D700452528 /* CDVWKProcessPoolFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVWKProcessPoolFactory.m; sourceTree = "<group>"; };
+		08709CBD21BA093400F3732F /* PayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayView.xib; sourceTree = "<group>"; };
+		08B2CA7C21C0BAC900FAAF33 /* APPBackgroundMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPBackgroundMode.h; sourceTree = "<group>"; };
+		08B2CA7D21C0BAC900FAAF33 /* APPMethodMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPMethodMagic.h; sourceTree = "<group>"; };
+		08B2CA7E21C0BAC900FAAF33 /* APPBackgroundMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPBackgroundMode.m; sourceTree = "<group>"; };
+		08B2CA7F21C0BAC900FAAF33 /* APPMethodMagic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPMethodMagic.m; sourceTree = "<group>"; };
+		08B2CA8221C0BAC900FAAF33 /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVDevice.m; sourceTree = "<group>"; };
+		08B2CA8321C0BAC900FAAF33 /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVDevice.h; sourceTree = "<group>"; };
+		08B2CA8821C0C27B00FAAF33 /* appbeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = appbeep.wav; sourceTree = "<group>"; };
+		08B2CA8C21C0E64F00FAAF33 /* GseWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GseWallet.m; sourceTree = "<group>"; };
+		08B2CA9121C0F99200FAAF33 /* GSE_WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSE_WebViewController.h; sourceTree = "<group>"; };
+		08B2CA9221C0F99200FAAF33 /* GSE_WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSE_WebViewController.m; sourceTree = "<group>"; };
+		08F45ADE21B6844A00DC256D /* GSE_Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSE_Pay.swift; sourceTree = "<group>"; };
+		08F45AE021B6844A00DC256D /* MainAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAPIClient.swift; sourceTree = "<group>"; };
+		08F45AE121B6844A00DC256D /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		08F45AE621B6848700DC256D /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		08F45AEC21B6881600DC256D /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F45AEE21B6881600DC256D /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F45AF321B76EF100DC256D /* StripePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripePay.swift; sourceTree = "<group>"; };
+		08F45AF721B8D96400DC256D /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		134D89DCEA99083248CC5A21 /* Pods-ios+cordovaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios+cordovaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios+cordovaDemo/Pods-ios+cordovaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		149E6ADCEDE5E4DE2ABFB892 /* libPods-ios+cordovaDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios+cordovaDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41DD9BC5A872B0ED591E710 /* Pods-ios+cordovaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios+cordovaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios+cordovaDemo/Pods-ios+cordovaDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		081AE6F721A0F3A900A3442D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F45AED21B6881600DC256D /* libAlamofire.a in Frameworks */,
+				08F45AEF21B6881600DC256D /* libStripe.a in Frameworks */,
+				081AE76721A11CC800A3442D /* libCordova.a in Frameworks */,
+				F65CD430735B4335E1973F96 /* libPods-ios+cordovaDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081AE70F21A0F3AA00A3442D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081AE71A21A0F3AA00A3442D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0814CE5321C393E8005C6EFA /* GseUtils */ = {
+			isa = PBXGroup;
+			children = (
+				0814CE5821C396B5005C6EFA /* UIView+MaskActivity.h */,
+				0814CE5921C396B5005C6EFA /* UIView+MaskActivity.m */,
+			);
+			path = GseUtils;
+			sourceTree = "<group>";
+		};
+		081AE6F121A0F3A900A3442D = {
+			isa = PBXGroup;
+			children = (
+				086A7F2721BE67D700452528 /* Plugins */,
+				081AE76321A11C9400A3442D /* www */,
+				081AE76121A11C8600A3442D /* config.xml */,
+				081AE75821A11C6F00A3442D /* CordovaLib.xcodeproj */,
+				081AE6FC21A0F3A900A3442D /* ios+cordovaDemo */,
+				081AE71521A0F3AA00A3442D /* ios+cordovaDemoTests */,
+				081AE72021A0F3AA00A3442D /* ios+cordovaDemoUITests */,
+				081AE6FB21A0F3A900A3442D /* Products */,
+				081AE73F21A0FA9200A3442D /* Frameworks */,
+				ED51AF06EDDFF53909F5A77F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		081AE6FB21A0F3A900A3442D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				081AE6FA21A0F3A900A3442D /* ios+cordovaDemo.app */,
+				081AE71221A0F3AA00A3442D /* ios+cordovaDemoTests.xctest */,
+				081AE71D21A0F3AA00A3442D /* ios+cordovaDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		081AE6FC21A0F3A900A3442D /* ios+cordovaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				08F45ADC21B6844A00DC256D /* pay */,
+				0814CE5321C393E8005C6EFA /* GseUtils */,
+				081AE6FD21A0F3A900A3442D /* AppDelegate.h */,
+				081AE6FE21A0F3A900A3442D /* AppDelegate.m */,
+				081AE70021A0F3A900A3442D /* ViewController.h */,
+				081AE70121A0F3A900A3442D /* ViewController.m */,
+				08B2CA9121C0F99200FAAF33 /* GSE_WebViewController.h */,
+				08B2CA9221C0F99200FAAF33 /* GSE_WebViewController.m */,
+				081E0E7B21C7788A000EF892 /* Supporting Files */,
+			);
+			path = "ios+cordovaDemo";
+			sourceTree = "<group>";
+		};
+		081AE71521A0F3AA00A3442D /* ios+cordovaDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				081AE71621A0F3AA00A3442D /* ios_cordovaDemoTests.m */,
+				081AE71821A0F3AA00A3442D /* Info.plist */,
+			);
+			path = "ios+cordovaDemoTests";
+			sourceTree = "<group>";
+		};
+		081AE72021A0F3AA00A3442D /* ios+cordovaDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				081AE72121A0F3AA00A3442D /* ios_cordovaDemoUITests.m */,
+				081AE72321A0F3AA00A3442D /* Info.plist */,
+			);
+			path = "ios+cordovaDemoUITests";
+			sourceTree = "<group>";
+		};
+		081AE73F21A0FA9200A3442D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F45AEC21B6881600DC256D /* libAlamofire.a */,
+				08F45AEE21B6881600DC256D /* libStripe.a */,
+				149E6ADCEDE5E4DE2ABFB892 /* libPods-ios+cordovaDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		081AE75921A11C6F00A3442D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				081AE75E21A11C6F00A3442D /* libCordova.a */,
+				081AE76021A11C6F00A3442D /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		081E0E7B21C7788A000EF892 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08B2CA8821C0C27B00FAAF33 /* appbeep.wav */,
+				081AE70621A0F3AA00A3442D /* Assets.xcassets */,
+				081AE70321A0F3A900A3442D /* Main.storyboard */,
+				081AE70821A0F3AA00A3442D /* LaunchScreen.storyboard */,
+				081AE70B21A0F3AA00A3442D /* Info.plist */,
+				081AE70C21A0F3AA00A3442D /* main.m */,
+				08F45AE621B6848700DC256D /* Bridging-Header.h */,
+				0810207421BFA89700C2EF1F /* PrefixHeader.pch */,
+				0810207521BFA94900C2EF1F /* Macros.h */,
+				081E0E7C21C778E8000EF892 /* GlobalConst.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		086A7F2721BE67D700452528 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				08B2CA7B21C0BAC900FAAF33 /* cordova-plugin-background-mode */,
+				08B2CA8121C0BAC900FAAF33 /* cordova-plugin-device */,
+				08B2CA8B21C0E64F00FAAF33 /* cordova-plugin-gsewallet */,
+				086A7F2821BE67D700452528 /* cordova-plugin-geolocation */,
+				086A7F2B21BE67D700452528 /* cordova-plugin-qrscanner */,
+				086A7F2D21BE67D700452528 /* README */,
+				086A7F2E21BE67D700452528 /* cordova-plugin-wkwebview-engine */,
+			);
+			name = Plugins;
+			path = "ios+cordovaDemo/Plugins";
+			sourceTree = "<group>";
+		};
+		086A7F2821BE67D700452528 /* cordova-plugin-geolocation */ = {
+			isa = PBXGroup;
+			children = (
+				086A7F2921BE67D700452528 /* CDVLocation.h */,
+				086A7F2A21BE67D700452528 /* CDVLocation.m */,
+			);
+			path = "cordova-plugin-geolocation";
+			sourceTree = "<group>";
+		};
+		086A7F2B21BE67D700452528 /* cordova-plugin-qrscanner */ = {
+			isa = PBXGroup;
+			children = (
+				086A7F2C21BE67D700452528 /* QRScanner.swift */,
+			);
+			path = "cordova-plugin-qrscanner";
+			sourceTree = "<group>";
+		};
+		086A7F2E21BE67D700452528 /* cordova-plugin-wkwebview-engine */ = {
+			isa = PBXGroup;
+			children = (
+				086A7F2F21BE67D700452528 /* CDVWKWebViewUIDelegate.h */,
+				086A7F3021BE67D700452528 /* CDVWKWebViewEngine.m */,
+				086A7F3121BE67D700452528 /* CDVWKProcessPoolFactory.h */,
+				086A7F3221BE67D700452528 /* CDVWKWebViewUIDelegate.m */,
+				086A7F3321BE67D700452528 /* CDVWKWebViewEngine.h */,
+				086A7F3421BE67D700452528 /* CDVWKProcessPoolFactory.m */,
+			);
+			path = "cordova-plugin-wkwebview-engine";
+			sourceTree = "<group>";
+		};
+		08B2CA7B21C0BAC900FAAF33 /* cordova-plugin-background-mode */ = {
+			isa = PBXGroup;
+			children = (
+				08B2CA7C21C0BAC900FAAF33 /* APPBackgroundMode.h */,
+				08B2CA7D21C0BAC900FAAF33 /* APPMethodMagic.h */,
+				08B2CA7E21C0BAC900FAAF33 /* APPBackgroundMode.m */,
+				08B2CA7F21C0BAC900FAAF33 /* APPMethodMagic.m */,
+			);
+			path = "cordova-plugin-background-mode";
+			sourceTree = "<group>";
+		};
+		08B2CA8121C0BAC900FAAF33 /* cordova-plugin-device */ = {
+			isa = PBXGroup;
+			children = (
+				08B2CA8221C0BAC900FAAF33 /* CDVDevice.m */,
+				08B2CA8321C0BAC900FAAF33 /* CDVDevice.h */,
+			);
+			path = "cordova-plugin-device";
+			sourceTree = "<group>";
+		};
+		08B2CA8B21C0E64F00FAAF33 /* cordova-plugin-gsewallet */ = {
+			isa = PBXGroup;
+			children = (
+				08B2CA8C21C0E64F00FAAF33 /* GseWallet.m */,
+			);
+			path = "cordova-plugin-gsewallet";
+			sourceTree = "<group>";
+		};
+		08F45ADC21B6844A00DC256D /* pay */ = {
+			isa = PBXGroup;
+			children = (
+				08709CBD21BA093400F3732F /* PayView.xib */,
+				08F45AF721B8D96400DC256D /* Popup.swift */,
+				08F45ADE21B6844A00DC256D /* GSE_Pay.swift */,
+				08F45AF121B76E2D00DC256D /* stripePay */,
+				08F45AF221B76E5B00DC256D /* gseTokenPay */,
+			);
+			path = pay;
+			sourceTree = "<group>";
+		};
+		08F45AF121B76E2D00DC256D /* stripePay */ = {
+			isa = PBXGroup;
+			children = (
+				08F45AF321B76EF100DC256D /* StripePay.swift */,
+				08F45AE021B6844A00DC256D /* MainAPIClient.swift */,
+				08F45AE121B6844A00DC256D /* Ride.swift */,
+			);
+			path = stripePay;
+			sourceTree = "<group>";
+		};
+		08F45AF221B76E5B00DC256D /* gseTokenPay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = gseTokenPay;
+			sourceTree = "<group>";
+		};
+		ED51AF06EDDFF53909F5A77F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				134D89DCEA99083248CC5A21 /* Pods-ios+cordovaDemo.debug.xcconfig */,
+				A41DD9BC5A872B0ED591E710 /* Pods-ios+cordovaDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		081AE6F921A0F3A900A3442D /* ios+cordovaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081AE72621A0F3AA00A3442D /* Build configuration list for PBXNativeTarget "ios+cordovaDemo" */;
+			buildPhases = (
+				88496724B27E762586BD7890 /* [CP] Check Pods Manifest.lock */,
+				081AE6F621A0F3A900A3442D /* Sources */,
+				081AE6F721A0F3A900A3442D /* Frameworks */,
+				081AE6F821A0F3A900A3442D /* Resources */,
+				081AE72F21A0F93900A3442D /* Copy www directory */,
+				1A5FAD520C8A5EBE2BCA0A82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				081AE76621A11CAE00A3442D /* PBXTargetDependency */,
+			);
+			name = "ios+cordovaDemo";
+			productName = "ios+cordovaDemo";
+			productReference = 081AE6FA21A0F3A900A3442D /* ios+cordovaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		081AE71121A0F3AA00A3442D /* ios+cordovaDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081AE72921A0F3AA00A3442D /* Build configuration list for PBXNativeTarget "ios+cordovaDemoTests" */;
+			buildPhases = (
+				081AE70E21A0F3AA00A3442D /* Sources */,
+				081AE70F21A0F3AA00A3442D /* Frameworks */,
+				081AE71021A0F3AA00A3442D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				081AE71421A0F3AA00A3442D /* PBXTargetDependency */,
+			);
+			name = "ios+cordovaDemoTests";
+			productName = "ios+cordovaDemoTests";
+			productReference = 081AE71221A0F3AA00A3442D /* ios+cordovaDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		081AE71C21A0F3AA00A3442D /* ios+cordovaDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081AE72C21A0F3AA00A3442D /* Build configuration list for PBXNativeTarget "ios+cordovaDemoUITests" */;
+			buildPhases = (
+				081AE71921A0F3AA00A3442D /* Sources */,
+				081AE71A21A0F3AA00A3442D /* Frameworks */,
+				081AE71B21A0F3AA00A3442D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				081AE71F21A0F3AA00A3442D /* PBXTargetDependency */,
+			);
+			name = "ios+cordovaDemoUITests";
+			productName = "ios+cordovaDemoUITests";
+			productReference = 081AE71D21A0F3AA00A3442D /* ios+cordovaDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		081AE6F221A0F3A900A3442D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "付金亮";
+				TargetAttributes = {
+					081AE6F921A0F3A900A3442D = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					081AE71121A0F3AA00A3442D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 081AE6F921A0F3A900A3442D;
+					};
+					081AE71C21A0F3AA00A3442D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 081AE6F921A0F3A900A3442D;
+					};
+				};
+			};
+			buildConfigurationList = 081AE6F521A0F3A900A3442D /* Build configuration list for PBXProject "ios+cordovaDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 081AE6F121A0F3A900A3442D;
+			productRefGroup = 081AE6FB21A0F3A900A3442D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 081AE75921A11C6F00A3442D /* Products */;
+					ProjectRef = 081AE75821A11C6F00A3442D /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				081AE6F921A0F3A900A3442D /* ios+cordovaDemo */,
+				081AE71121A0F3AA00A3442D /* ios+cordovaDemoTests */,
+				081AE71C21A0F3AA00A3442D /* ios+cordovaDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		081AE75E21A11C6F00A3442D /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 081AE75D21A11C6F00A3442D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		081AE76021A11C6F00A3442D /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 081AE75F21A11C6F00A3442D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		081AE6F821A0F3A900A3442D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08709CBE21BA093400F3732F /* PayView.xib in Resources */,
+				081AE70A21A0F3AA00A3442D /* LaunchScreen.storyboard in Resources */,
+				081AE70721A0F3AA00A3442D /* Assets.xcassets in Resources */,
+				086A7F3721BE67D700452528 /* README in Resources */,
+				08B2CA8921C0C27B00FAAF33 /* appbeep.wav in Resources */,
+				081AE70521A0F3A900A3442D /* Main.storyboard in Resources */,
+				081AE76421A11C9400A3442D /* www in Resources */,
+				081AE76221A11C8600A3442D /* config.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081AE71021A0F3AA00A3442D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081AE71B21A0F3AA00A3442D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081AE72F21A0F93900A3442D /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js\n\n";
+		};
+		1A5FAD520C8A5EBE2BCA0A82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios+cordovaDemo/Pods-ios+cordovaDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Stripe.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios+cordovaDemo/Pods-ios+cordovaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88496724B27E762586BD7890 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios+cordovaDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		081AE6F621A0F3A900A3442D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081E0E7D21C778E8000EF892 /* GlobalConst.swift in Sources */,
+				086A7F3621BE67D700452528 /* QRScanner.swift in Sources */,
+				0814CE5A21C396B5005C6EFA /* UIView+MaskActivity.m in Sources */,
+				081AE70221A0F3A900A3442D /* ViewController.m in Sources */,
+				081AE70D21A0F3AA00A3442D /* main.m in Sources */,
+				08F45AF821B8D96400DC256D /* Popup.swift in Sources */,
+				08B2CA8421C0BAC900FAAF33 /* APPBackgroundMode.m in Sources */,
+				08B2CA8621C0BAC900FAAF33 /* CDVDevice.m in Sources */,
+				08F45AE421B6844A00DC256D /* MainAPIClient.swift in Sources */,
+				08F45AE521B6844A00DC256D /* Ride.swift in Sources */,
+				08B2CA8521C0BAC900FAAF33 /* APPMethodMagic.m in Sources */,
+				086A7F3A21BE67D700452528 /* CDVWKProcessPoolFactory.m in Sources */,
+				081AE6FF21A0F3A900A3442D /* AppDelegate.m in Sources */,
+				08B2CA8E21C0E64F00FAAF33 /* GseWallet.m in Sources */,
+				08F45AE221B6844A00DC256D /* GSE_Pay.swift in Sources */,
+				08F45AF421B76EF100DC256D /* StripePay.swift in Sources */,
+				086A7F3821BE67D700452528 /* CDVWKWebViewEngine.m in Sources */,
+				086A7F3521BE67D700452528 /* CDVLocation.m in Sources */,
+				086A7F3921BE67D700452528 /* CDVWKWebViewUIDelegate.m in Sources */,
+				08B2CA9321C0F99200FAAF33 /* GSE_WebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081AE70E21A0F3AA00A3442D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081AE71721A0F3AA00A3442D /* ios_cordovaDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081AE71921A0F3AA00A3442D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081AE72221A0F3AA00A3442D /* ios_cordovaDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		081AE71421A0F3AA00A3442D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081AE6F921A0F3A900A3442D /* ios+cordovaDemo */;
+			targetProxy = 081AE71321A0F3AA00A3442D /* PBXContainerItemProxy */;
+		};
+		081AE71F21A0F3AA00A3442D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081AE6F921A0F3A900A3442D /* ios+cordovaDemo */;
+			targetProxy = 081AE71E21A0F3AA00A3442D /* PBXContainerItemProxy */;
+		};
+		081AE76621A11CAE00A3442D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 081AE76521A11CAE00A3442D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		081AE70321A0F3A900A3442D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081AE70421A0F3A900A3442D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		081AE70821A0F3AA00A3442D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081AE70921A0F3AA00A3442D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		081AE72421A0F3AA00A3442D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		081AE72521A0F3AA00A3442D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		081AE72721A0F3AA00A3442D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 134D89DCEA99083248CC5A21 /* Pods-ios+cordovaDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BBHX4KY824;
+				ENABLE_BITCODE = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ios+cordovaDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include";
+				INFOPLIST_FILE = "ios+cordovaDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gse.ios-cordovaDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "gseWalletIOSCordova-develop";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PODS_ROOT)/Stripe/**",
+					"$(PODS_ROOT)/Toast/**",
+				);
+			};
+			name = Debug;
+		};
+		081AE72821A0F3AA00A3442D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A41DD9BC5A872B0ED591E710 /* Pods-ios+cordovaDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BBHX4KY824;
+				ENABLE_BITCODE = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ios+cordovaDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include";
+				INFOPLIST_FILE = "ios+cordovaDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gse.ios-cordovaDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "gseWalletIOSCordova-develop";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PODS_ROOT)/Stripe/**",
+					"$(PODS_ROOT)/Toast/**",
+				);
+			};
+			name = Release;
+		};
+		081AE72A21A0F3AA00A3442D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBHX4KY824;
+				INFOPLIST_FILE = "ios+cordovaDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gse.ios-cordovaDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios+cordovaDemo.deviceReady/ios+cordovaDemo";
+			};
+			name = Debug;
+		};
+		081AE72B21A0F3AA00A3442D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBHX4KY824;
+				INFOPLIST_FILE = "ios+cordovaDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gse.ios-cordovaDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios+cordovaDemo.deviceReady/ios+cordovaDemo";
+			};
+			name = Release;
+		};
+		081AE72D21A0F3AA00A3442D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBHX4KY824;
+				INFOPLIST_FILE = "ios+cordovaDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gse.ios-cordovaDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios+cordovaDemo";
+			};
+			name = Debug;
+		};
+		081AE72E21A0F3AA00A3442D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBHX4KY824;
+				INFOPLIST_FILE = "ios+cordovaDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gse.ios-cordovaDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios+cordovaDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		081AE6F521A0F3A900A3442D /* Build configuration list for PBXProject "ios+cordovaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081AE72421A0F3AA00A3442D /* Debug */,
+				081AE72521A0F3AA00A3442D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081AE72621A0F3AA00A3442D /* Build configuration list for PBXNativeTarget "ios+cordovaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081AE72721A0F3AA00A3442D /* Debug */,
+				081AE72821A0F3AA00A3442D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081AE72921A0F3AA00A3442D /* Build configuration list for PBXNativeTarget "ios+cordovaDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081AE72A21A0F3AA00A3442D /* Debug */,
+				081AE72B21A0F3AA00A3442D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081AE72C21A0F3AA00A3442D /* Build configuration list for PBXNativeTarget "ios+cordovaDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081AE72D21A0F3AA00A3442D /* Debug */,
+				081AE72E21A0F3AA00A3442D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 081AE6F221A0F3A900A3442D /* Project object */;
+}
